@@ -1,0 +1,42 @@
+*{
+    background-color: black;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: white;
+    
+}
+/* -------------------NAV_BAR-------------------- */
+.nav-item a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 40px;
+    font-size: 25px;
+}
+
+.nav-item a:hover{
+    transition-duration: 0.5s;
+    border-bottom: 2px solid red;
+    /* transition: width; */
+    
+    
+}
+
+.nav-item{
+    display: inline;
+}
+.nav-holder{
+    /* position: relative; */
+    
+    padding: 0;
+    display: block;
+    margin-top: 25px;
+    /* margin-right: 3%; */
+    width: 100%;
+    text-align: right;
+}
+
+.nav-bar{
+    display: block;
+    /* border: 1px solid white; */
+}
