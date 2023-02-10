@@ -10,7 +10,7 @@
     color: white;
     list-style: none;
     text-decoration: none;
-    margin-right: 40px;
+    /* margin-right: 40px; */
     font-size: 25px;
 }
 
@@ -26,17 +26,47 @@
     display: inline;
 }
 .nav-holder{
-    /* position: relative; */
+    position: absolute;
     
     padding: 0;
-    display: block;
+    display: inline-block;
     margin-top: 25px;
-    /* margin-right: 3%; */
+    /* padding-right: 100px; */
     width: 100%;
     text-align: right;
+    right: 100px;
 }
 
 .nav-bar{
     display: block;
     /* border: 1px solid white; */
+}
+
+.container{
+    display: inline-block;
+    width: 5%;
+}
+.underline{
+    
+    width: 60%;
+    height: 1px;
+    position: relative;
+    bottom: 1px;
+    background-color: red;
+    left: 38%;
+    animation: gifty;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    
+   
+}
+@keyframes gifty{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 60%;
+    }
 }
