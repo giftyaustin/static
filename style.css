@@ -3,70 +3,73 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: white;
+
     
+}
+.mobile{
+    display: none;
 }
 /* -------------------NAV_BAR-------------------- */
-.nav-item a{
-    color: white;
-    list-style: none;
-    text-decoration: none;
-    /* margin-right: 40px; */
-    font-size: 25px;
-}
 
-.nav-item a:hover{
-    transition-duration: 0.5s;
-    border-bottom: 2px solid red;
-    /* transition: width; */
-    
-    
-}
-
-.nav-item{
-    display: inline;
-}
 .nav-holder{
+    
+    display: flex;
+    justify-content: end;
+    list-style: none;
+    margin-top: 15px;
+    margin-right: 2%;
+    
+    
+    
+}
+
+.nav-holder a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 30px;  
+    position: relative;  
+}
+
+.nav-holder a::after{
+    content: ""; 
+     
+    width: 0;
+    height: 3px;
+    background-color: brown;
     position: absolute;
+    left: 50%;
+    bottom: -6px;
     
-    padding: 0;
-    display: inline-block;
-    margin-top: 25px;
-    /* padding-right: 100px; */
+    
+}
+
+.nav-holder a:hover::after{
+    left: 0;
     width: 100%;
-    text-align: right;
-    right: 100px;
+    transition: 0.5s;
+    
+    
 }
 
-.nav-bar{
-    display: block;
-    /* border: 1px solid white; */
-}
 
-.container{
-    display: inline-block;
-    width: 5%;
-}
-.underline{
-    
-    width: 60%;
-    height: 1px;
-    position: relative;
-    bottom: 1px;
-    background-color: red;
-    left: 38%;
-    animation: gifty;
-    animation-duration: 1.5s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    
-   
-}
-@keyframes gifty{
-    from{
-        width: 0%;
+
+/* ------------------------MEDIA_QUERIES------------------------ */
+
+
+@media (max-width:680px){
+    nav{
+        display: none;
     }
-    to{
-        width: 60%;
+    .mobile{
+        display: flex;
+        justify-content: end;
     }
+    .trigram{
+        display: block;
+        font-size: 25px;
+        margin-right: 2%;
+        text-decoration: none;
+    }
+    
+
 }
