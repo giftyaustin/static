@@ -3,6 +3,7 @@
     margin: 0;
     font-family: 'Lato', sans-serif;
     color: white;
+    padding: 0;
 
     
 }
@@ -51,6 +52,17 @@
     
 }
 
+/* ------------------------Main-container------------------------ */
+.container{
+    margin-top:250px;
+    width: 100%;
+    
+}
+h1{
+    margin-left: 10px;
+    font-size: 60%;
+}
+
 
 
 /* ------------------------MEDIA_QUERIES------------------------ */
@@ -64,11 +76,51 @@
         display: flex;
         justify-content: end;
     }
+    .nav-holder {
+        display: block;
+        justify-content: end;
+        list-style: none;
+        padding: 0;
+        background-color: transparent;
+        margin-top: 5px;
+    }
     .trigram{
         display: block;
         font-size: 25px;
         margin-right: 2%;
         text-decoration: none;
+        
+        background-color: transparent;
+        z-index: 101;
+    }
+    .dropped-nav{
+        display: flex;
+        background-color: transparent;
+        /* border: 2px solid red; */
+        justify-content: start;
+        width: 200px;
+        
+        right: 0;
+        top:5px;
+        
+        position: absolute;
+        animation: gifty;
+        animation-duration: 0.5s;
+        animation-timing-function:cubic-bezier(0, 1.02, 0.58, 1);
+        
+    }
+    .dropped-nav li,a{
+        /* background-color: grey; */
+        margin-bottom: 20px;
+    }
+    @keyframes gifty{
+        from{
+            width:0;
+        }
+        to{
+            width:200px;
+        }
+        
     }
     
 
