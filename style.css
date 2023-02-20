@@ -173,6 +173,15 @@ span{
     width: 100%;
     animation-timing-function: ease-in-out;
 }
+.item-s-clicked::after{
+    left: 50%;
+    animation: austin;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    width: 100%;
+    animation-timing-function: ease-in-out;
+}
+
 @keyframes austin{
     from{
         width: 0;
@@ -190,7 +199,13 @@ span{
     margin-top: 50px;
 }
 .skill-display{
+    display: none;
+   
+}
+
+.skill-display-clicked{
     display: flex;
+     
     width: 100%;
     padding-left: 30px;
 }
