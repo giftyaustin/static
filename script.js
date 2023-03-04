@@ -8,7 +8,7 @@ function dropthenav(){
     }
 }
 
-function skillDropClicked(){
+ function skillDropClicked(){
     var x = document.getElementById("skilldrop");
     var y = document.getElementById("skillsbuttonclicked");
     var a = document.getElementById("ed-clicked");
